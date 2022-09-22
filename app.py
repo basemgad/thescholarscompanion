@@ -44,7 +44,6 @@ def searchq(query = ""):
             score = diffGrader(text)
             result = Result(title,i,score)
             results.append(result)
-            print(title, " || has reading score of || ", score)
 
     results = sorted(results, key=lambda x: x.difficulty)
 
