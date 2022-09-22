@@ -1,0 +1,14 @@
+{% extends 'index.html' %}
+
+{% block searchResultsBlock %}
+
+<div class="botHalf">
+    {% for result in results %}
+        <div class="resultContainer">
+            <a href={{result.url}}>{{result.title}}</a>
+            <h5>{{result.difficulty}}</h5>
+        </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
