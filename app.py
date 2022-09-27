@@ -30,7 +30,7 @@ def searchq(query = ""):
 
     results = []
     #search google for the top 10 results of query search
-    list = search(query, num_results=10)
+    list = search(query, 10)
     for i in list :
         req = Request(i , headers={'User-Agent': 'Mozilla/5.0'})
         webpage = urlopen(req).read()
