@@ -1,15 +1,20 @@
-html, body{
+
+html {
     min-height: 100%;
+}
+body {
     background: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
-    background-size: cover;
+    height: 100%;
+    margin: 0;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .topHalf, .botHalf{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Source Sans Pro';
+    font-family: 'Lucida Bright';
     -webkit-animation: fadein 2s;
     margin: 5px 0px;
     padding: 5px;
