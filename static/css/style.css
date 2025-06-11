@@ -38,7 +38,7 @@ body {
 
 .topHalf p{
     text-align: center;
-    font-style: italic;
+    font-style: normal;
     font-weight: bold;
     color:rgba(50, 49, 82, 0.6);
     width: 440px;
