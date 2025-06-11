@@ -79,4 +79,17 @@ body {
     alight-items: center;
     justify-content: center;
 }
-
+.spinner{
+    width: 30px;
+    height: 30px;
+    border: 7px solid #7ac5f0;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spinner 0.7s linear infinite;
+} 
+@keyframes spinner{
+    from{}
+        to{
+            transform: rotate(360deg);
+        }
+}
