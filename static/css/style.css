@@ -34,6 +34,7 @@ body {
 
 .topHalf h2 {
     margin-top: 0px;
+    font-weight: bold;
 }
 
 .topHalf p{
@@ -42,7 +43,7 @@ body {
     color:rgba(50, 49, 82, 0.6);
     width: 440px;
     margin-top: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     
 }
 
