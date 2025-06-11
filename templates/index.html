@@ -22,16 +22,17 @@
     </form>
 
     <!-- ✅ Loading message -->
-    <div class = "container">
-        <div class="spinner"></div>
-    </div>
+    <div id="loadingSpinner" class="container" style="display: none;">
+    <div class="spinner"></div>
+</div>
 
 </div>
 
 <!-- ✅ Inline JavaScript -->
 <script>
     document.getElementById("searchForm").addEventListener("submit", function () {
-        document.getElementById("loadingMessage").style.display = "block";
+        document.getElementById("loadingSpinner").style.display = "block";
     });
 </script>
+
 {% endblock %}
