@@ -2,27 +2,36 @@
 
 {% block body %}
 <div class="topHalf">
-  
+
     <h2>The Scholar's Companion</h2>
 
     <img src="{{ url_for('static',filename='/pictures/book.png')}}">
 
-    <p>Welcome to the Scholar's companion search tool. To begin, simply type in a topic you'd like to learn more about. You will then recieve a
+    <p>Welcome to the Scholar's companion search tool. To begin, simply type in a topic you'd like to learn more about. You will then receive a
         list of the most popular articles explaining the topic organized by their reading difficulty!
     </p>
 
     <form class="form-inline" action="/" method="POST" id="searchForm">
-
         <div class="form-group mx-sm-3 mb-2">
-          <label for="inputPassword2" class="sr-only">topic</label>
-          <input type="text" class="form-control" name="query" id="query" placeholder="Enter topic here..." size="40">
+            <label for="inputPassword2" class="sr-only">topic</label>
+            <input type="text" class="form-control" name="query" id="query" placeholder="Enter topic here..." size="40">
         </div>
-
-        <button type="submit" class="btn btn-primary mb-2" style="padding: 5px 20px;">
+        <button type="submit" class="btn btn-primary mb-2" style="padding: 5px 20px; font-size: 18px;">
             <i class="fa-solid fa-book-open"></i>
         </button>
+    </form>
 
-      </form>
+    <!-- ✅ Loading message -->
+    <div id="loadingMessage" style="display: none; font-size: 18px; color: #333; margin-top: 20px;">
+        Loading, please wait...
+    </div>
 
 </div>
+
+<!-- ✅ Inline JavaScript -->
+<script>
+    document.getElementById("searchForm").addEventListener("submit", function () {
+        document.getElementById("loadingMessage").style.display = "block";
+    });
+</script>
 {% endblock %}
