@@ -74,11 +74,13 @@ body {
 
 /* ✅ Spinner styles */
 #loadingSpinner {
-    margin-top: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-top: 15px;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -89,7 +91,9 @@ body {
     border-top-color: transparent;
     border-radius: 50%;
     animation: spinner 0.7s linear infinite;
+    margin: 0 auto; /* helpful fallback for non-flex contexts */
 }
+
 
 @keyframes spinner {
     from {}
